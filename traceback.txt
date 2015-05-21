@@ -1,0 +1,73 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/chap4.rpy", line 152, in script
+    "I don't want to kill them. I can sneak out and try to steal their vehicle without them
+  File "game/screens.rpy", line 67, in execute
+    screen choice(items):
+  File "game/screens.rpy", line 69, in execute
+    window:
+  File "game/screens.rpy", line 74, in execute
+    vbox:
+  File "game/screens.rpy", line 78, in execute
+    for caption, action, chosen in items:
+  File "game/screens.rpy", line 80, in execute
+    if action:
+  File "game/screens.rpy", line 82, in execute
+    button:
+  File "game/screens.rpy", line 86, in execute
+    text caption style "menu_choice"
+KeyError: u'N/A'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/chap4.rpy", line 152, in script
+    "I don't want to kill them. I can sneak out and try to steal their vehicle without them
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\ast.py", line 1411, in execute
+    choice = renpy.exports.menu(choices, self.set)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\exports.py", line 730, in menu
+    rv = renpy.store.menu(items)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\exports.py", line 878, in display_menu
+    show_screen(screen, items=item_actions, _widget_properties=props, _transient=True, _layer=renpy.config.choice_layer, **scope)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\display\screen.py", line 840, in show_screen
+    sls.add(_layer, d, _tag, zorder=d.zorder, transient=_transient, keep_st=True, name=name)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\display\core.py", line 861, in add
+    self.hide_or_replace(layer, remove_index, "replaced")
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\display\core.py", line 883, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\display\screen.py", line 426, in _hide
+    self.update()
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\display\screen.py", line 556, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 67, in execute
+    screen choice(items):
+  File "game/screens.rpy", line 69, in execute
+    window:
+  File "game/screens.rpy", line 74, in execute
+    vbox:
+  File "game/screens.rpy", line 78, in execute
+    for caption, action, chosen in items:
+  File "game/screens.rpy", line 80, in execute
+    if action:
+  File "game/screens.rpy", line 82, in execute
+    button:
+  File "game/screens.rpy", line 86, in execute
+    text caption style "menu_choice"
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\text\text.py", line 1186, in __init__
+    self.set_text(text, scope, substitute)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\text\text.py", line 1253, in set_text
+    i, did_sub = renpy.substitutions.substitute(i, scope, substitute)
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\substitutions.py", line 229, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 543, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 565, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 626, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in get_value
+  File "C:\Temp52\renpy-6.99.3-sdk\renpy\substitutions.py", line 192, in __getitem__
+    raise KeyError(key)
+KeyError: u'N/A'
+
+Windows-8-6.2.9200
+Ren'Py 6.99.3.404
+MantellianCandidate 0.0

@@ -162,6 +162,7 @@ label ch4_mira_stayed_behind:
         "*NOT IMPLEMENTED* These two are obviously seps and wouldn't hesitate to kill me or worse. 
          So I'll kill them first ...":
             $ dark += 5
+            jump ch4_mira_kills_seps_in_cave
 
     #####################################################################################################
     ## Mira Evades Seps in Cave Action Path #############################################################
@@ -280,3 +281,109 @@ label ch4_mira_subdues_seps_in_cave:
         "I'm not getting out of here without dealing with these two, and I'm not just going to watch them
          leave with all my supplies."
         "That, and they probably know where Carr is."
+    elif gray > max(good, dark):
+        "As much as I'd love to just let those two steal all my supplies and walk out of here without so
+         much as a thank you, I can't."
+        "Not to mention that I don't know where Carr is or what happened to him and I'm pretty sure a
+         little ... {b}aggressive{/b} persuasion could work wonders here."
+    elif dark > max(good, gray):
+        "I need some answers."
+        "These two can give them to me."
+        "Or else, die trying."
+        "If they don't know where Carr is or, worse, they've already killed him ..."
+        "Well."
+        "They won't be much good to me alive then, will they?"
+    else:
+        "I'll subdue these two and figure out what's going on."
+        "Yes, that's what I'll do."
+    
+    "Surprise is my weapon."
+    "They both have blasters, so I have to wait until they're distracted enough."
+    "It doesn't take too long."
+    "Soon one is gathering the emergency rations up while the other is further back in the cave, looking
+     for things they missed."
+    "Once the closests one has his arms full, I step out and rush him from behind."
+    
+    #####################################################################################################
+    ## Mira Fights Seps in Cave #########################################################################
+    #####################################################################################################
+    
+    sep1 "\"What the-\""
+    show sep1
+    "I close the gap, barely making a sound, and snake my good hand out to snatch the blaster right off
+     his hip."
+    "It catches in the holster, and he drops the rations to spin around on me."
+    "I stomp a foot into the back of his knee on reflex before he can do anything, though, and he crumples."
+    "Unfortunately, the blaster goes with him and I'm left standing there in the openw hen the other one
+     whips back around and draws on me without a word."
+    hide sep1
+    show sep2
+    player alarmed "..."
+    "Blaster fire flies past my head. I drop instantly to the dirt next to that sep on the ground, using
+     him as cover for a second while I wrench his blaster free."
+    "Two shots, and the other one drops his gun, stumbling back into the cave wall with some holes burned 
+     in his arm."
+    hide sep2
+    "That's when the first one decides to roll over and shove his elbow into my face."
+    "I fall flat on my back."
+    show sep1
+    "The sep rolls on top of me and forces my arm back down when I try to bring the blaster up to shoot
+     at him."
+    "He's baring his teeth down at me then, using his heavier weight to crush me into the ground."
+    "I manage to keep one of my legs free, though -- enough to slam the knee up into his unarmored crotch
+     and he grunts out in paint and surprise."
+    "Then I'm smashing my forehead into his nose and he flops away from me onto his back."
+    hide sep1
+    sep 3 "What the blazes is going on in here?!"
+    show sep3
+    "I blink up at a third man rushing into the cave, weapon out."
+    "He looks frantically around at the state of the other two, sees me, and shoots immediately."
+    "I roll over just ahead of the blast and fire back."
+    "My aim is better, even with my head throbbing, and that sep takes a blaster bolt in the chest."
+    "He collapses back against the cave wall, dead."
+    hide sep3
+    
+    #####################################################################################################
+    ## Mira Interrogates Seps in Cave ###################################################################
+    #####################################################################################################
+    
+    #####################################################################################################
+    ## Mira Kills Seps in Cave Action Path ##############################################################
+    #####################################################################################################
+    
+label ch4_mira_kills_seps_in_cave:
+    
+    "I don't know who these men are, but I know that leaving them alive is a mistake."
+    "The chances of them just stumbling upon this place are too small, and they sounded like they'd meant
+     Carr when I overheard them talking."
+    "That and the simple fact that they are raiding our campsite tells me all I need to know."
+    "They're separatists, and the enemy."
+    "I don't have a weapon, but they do."
+    "And some part of me is sure that I can get one before they get {b}me{/b}."
+    "I can't remember which part, so I just let myself glide forward on instinct and reflex."
+    show sep1
+    "I'm not disappointed when the muscle memory in my hands seems capable enough to snatch the blaster
+     right out of its holster form the nearest sep and blast him in the back before he even realizes
+     what is going on."
+    "That one goes down with a strangled cry hot on his lips."
+    hide sep1
+    show sep2
+    "The other one spins around and goes for his own weapon, but I scorch him twice before he can touch
+     it."
+    "Once he's no longer a threat, I blast them both again in the head to make sure they stay down for good."
+    hide sep2
+    "I'm checking their bodies for any sign of where they came from or maybe something of Carr's when I
+     hear another one suddenly calling from outside."
+    sep3 "\"Marsden?\""
+    sep3 "\"Traxx?\""
+    "{b}Blast{b}!"
+    "I didn't think about there possibly being more than the two."
+    "Stupid."
+    "Those kinds of mistakes got you killed."
+    "I was just lucky he hadn't tried to sneak up behind me while I was busy I blasting these other two."
+    "Now ..."
+    "I know there's at least one more outside the cave -- maybe more."
+    "Either way, I rush to the side of the hollow entry tunnel with my stolen blaster pointed and ready."
+    "He doesn't come rushing in immediately, so I'm left standing there waiting while I hold my breath
+     and listen to the crunch of his tentative footsteps at the other end of the tunnel."
+    

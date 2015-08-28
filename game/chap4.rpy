@@ -244,7 +244,7 @@ label ch4_mira_evades_seps_in_cave:
     play music "music/tension2.ogg" fadein 2 fadeout 3
     player awed "..."
     player "\"Stars ...\""
-    "I had no idea I had those kind of reflexes when I tried to escape the cave unnoticed, but they'd
+    "I had no idea I had those kinds of reflexes when I tried to escape the cave unnoticed, but they'd
      saved my life."
     "I've obviously had some training -- those weren't the combat skills of a regular deck hand for a
      naval vessel."
@@ -314,7 +314,7 @@ label ch4_mira_subdues_seps_in_cave:
      his hip."
     "It catches in the holster, and he drops the rations to spin around on me."
     "I stomp a foot into the back of his knee on reflex before he can do anything, though, and he crumples."
-    "Unfortunately, the blaster goes with him and I'm left standing there in the openw hen the other one
+    "Unfortunately, the blaster goes with him and I'm left standing there in the open when the other one
      whips back around and draws on me without a word."
     hide sep1
     show sep2
@@ -334,7 +334,7 @@ label ch4_mira_subdues_seps_in_cave:
      and he grunts out in paint and surprise."
     "Then I'm smashing my forehead into his nose and he flops away from me onto his back."
     hide sep1
-    sep 3 "What the blazes is going on in here?!"
+    sep3 "What the blazes is going on in here?!"
     show sep3
     "I blink up at a third man rushing into the cave, weapon out."
     "He looks frantically around at the state of the other two, sees me, and shoots immediately."

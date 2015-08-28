@@ -151,7 +151,7 @@ label chapter_two:
      Then he makes his way over to where I lay."
     "He watches me for a few moments without saying anything 
      and that silence stretches on uncomfortably."
-    player "I guess you don't talk much, do you?"
+    player "\"I guess you don't talk much, do you?\""
     if good > max(gray, dark):
         "It's a little unnerving, seeing as he {b}did{/b} go to the trouble of rescuing me."
     elif gray > max(good, dark):

@@ -285,7 +285,7 @@ label chapter_three:
         player alarmed "\"What?\""
         player smiling "\"... You afraid you'll end up having to carry me?\""
         carr annoyed "..."
-        carr "\"Franky ...\""
+        carr "\"Frankly ...\""
         carr "\"... yes.\""
     elif dark > max(good, gray):
         player annoyed "\"You can't just give me orders.\""
@@ -361,7 +361,8 @@ label chapter_three:
             "I guess I'll do what Lieutenant Carr wants and just ... stay put."
             "Yes, that's what I'll do ..."
             "Just ... stay put and wait ..."
-        "[N/A] Follow him. Quietly.":
+            jump chapter_four
+        "*NOT IMPLEMENTED* Follow him. Quietly.":
             $ gray += 5
             $ ch3_followed_carr = True
             "... Follow him?"
@@ -370,7 +371,7 @@ label chapter_three:
             "It's not like I really {b}need{/b} his permission or approval."
             "I just have to make sure I sneak out after he leaves and follow him until we're too
              far along to turn back ..."
-        "[N/A] Force him to take me with him.":
+        "*NOT IMPLEMENTED* Force him to take me with him.":
             $ dark += 5
             $ ch3_forced_carr = True
             "... {b}make{/b} him take me with him."

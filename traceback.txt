@@ -1,8 +1,8 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/chap4.rpy", line 152, in script
-    "I don't want to kill them. I can sneak out and try to steal their vehicle without them
+  File "game/chap3.rpy", line 355, in script
+    menu:
   File "game/screens.rpy", line 67, in execute
     screen choice(items):
   File "game/screens.rpy", line 69, in execute
@@ -22,8 +22,8 @@ KeyError: u'N/A'
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chap4.rpy", line 152, in script
-    "I don't want to kill them. I can sneak out and try to steal their vehicle without them
+  File "game/chap3.rpy", line 355, in script
+    menu:
   File "C:\Temp52\renpy-6.99.3-sdk\renpy\ast.py", line 1411, in execute
     choice = renpy.exports.menu(choices, self.set)
   File "C:\Temp52\renpy-6.99.3-sdk\renpy\exports.py", line 730, in menu
